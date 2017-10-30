@@ -27,4 +27,4 @@
 - if(other.transform.tag == "Orb") Destroy(other.gameObject);
 - transform the newbodyPart to the Head, Transform newBodyPart = Instantiate(bodyObject, currentPos, Quaternion.identity) as transform
 - bodyParts.Add(newBodyPart), increment the list or transform
-- Note: add rigidbody to enable collision
+- Note: add rigidbody to enable collision, leave the bodyParts size to be 0
