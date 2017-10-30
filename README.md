@@ -21,9 +21,10 @@
 - myOrder == 0, it is the first bodypart, will follow the head, make it look at the head, transform.LookAt(head.transform.position
 - else myOrder == other, make it follow the previous one, myOrder-1; transform.LookAt(head.tansform.position)
 
-### 5. eat the orbs to grow body
+### 5. Eat the orbs to grow body
 - create a cube as the orb, tag it as Orb
 - in SnakeMovement.cs, add a new method, call the existed method, OnCollisionEnter(Collision other)
 - if(other.transform.tag == "Orb") Destroy(other.gameObject);
 - transform the newbodyPart to the Head, Transform newBodyPart = Instantiate(bodyObject, currentPos, Quaternion.identity) as transform
 - bodyParts.Add(newBodyPart), increment the list or transform
+- Note: add rigidbody to enable collision
